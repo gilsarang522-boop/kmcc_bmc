@@ -759,7 +759,8 @@ export default function App() {
             )}
           </div>
         </div>
-        <p className="mt-8 text-center text-gray-500 text-sm">※ M1-M5는 온라인(2hr), M6는 오프라인(8hr)으로 진행됩니다.</p>
+        <p className="mt-8 text-center text-gray-200 text-sm">※ M1-M5는 온라인(2hr), M6는 오프라인(8hr)으로 진행됩니다.</p>
+         <p className="mt-8 text-center text-gray-200 text-sm">※ M1-M6는 자신 뿐 아니라 타인의 멘탈 코칭을 위해 설계 되었습니다.</p>
       </section>
 
       {/* 수강 대상 */}

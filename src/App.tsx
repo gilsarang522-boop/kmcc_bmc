@@ -388,23 +388,6 @@ export default function App() {
         </div>
       </section>
 
-      {/* 프로그램 안내 탭 메뉴 */}
-      <div className="max-w-3xl mx-auto px-6 pt-24 pb-8">
-        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 p-2 glass-card rounded-full border border-white/10">
-          <a href="#curriculum" className="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-500/20 transition-all">
-            전문가 과정
-          </a>
-          <a href="#workshop" className="w-full sm:w-auto text-center px-8 py-3 rounded-full text-gray-400 hover:text-white hover:bg-white/5 transition-all">
-            1일 워크숍
-          </a>
-          <a href="#special" className="w-full sm:w-auto text-center px-8 py-3 rounded-full text-gray-400 hover:text-white hover:bg-white/5 transition-all">
-            특강
-          </a>
-        </div>
-      </div>
-
-
-
       {/* 차별화 경쟁력 */}
       <section className="py-24 px-6 bg-zinc-900/30">
         <div className="max-w-5xl mx-auto">
@@ -444,6 +427,21 @@ export default function App() {
           </div>
         </div>
       </section>
+
+      {/* 프로그램 안내 탭 메뉴 */}
+      <div className="max-w-3xl mx-auto px-6 pt-12 pb-8">
+        <div className="flex flex-col sm:flex-row justify-center items-center gap-2 p-2 glass-card rounded-full border border-white/10">
+          <a href="#curriculum" className="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-500/20 transition-all">
+            전문가 과정
+          </a>
+          <a href="#workshop" className="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-500/20 transition-all">
+            1일 워크숍
+          </a>
+          <a href="#special" className="w-full sm:w-auto text-center px-8 py-3 rounded-full bg-blue-600 text-white font-bold shadow-lg shadow-blue-500/20 transition-all">
+            특강
+          </a>
+        </div>
+      </div>
 
       {/* 커리큘럼 */}
       <section id="curriculum" className="pt-12 pb-24 px-6 max-w-5xl mx-auto">
@@ -764,11 +762,11 @@ export default function App() {
       </section>
 
       {/* 수강 대상 */}
-      <section className="py-24 px-6">
+      <section className="py-12 px-6">
         <div className="max-w-4xl mx-auto">
-          <div className="text-center mb-16">
-            <h3 className="text-3xl font-bold mb-4">수강 대상</h3>
-            <p className="text-gray-400 text-lg">이런 분들께 적극 추천합니다</p>
+          <div className="text-center mb-12">
+            <h4 className="text-2xl font-bold mb-2">수강 대상</h4>
+            <p className="text-gray-400">이런 분들께 적극 추천합니다</p>
           </div>
           
           <div className="space-y-2">
@@ -797,9 +795,9 @@ export default function App() {
       </section>
 
       {/* 과정혜택 */}
-      <section className="py-24 px-6 max-w-4xl mx-auto">
+      <section className="py-12 px-6 max-w-4xl mx-auto">
         <div className="glass-card p-10 md:p-12 border-t-4 border-purple-500">
-          <h3 className="text-3xl font-bold mb-8 text-center">과정혜택</h3>
+          <h4 className="text-2xl font-bold mb-8 text-center">과정혜택</h4>
           <div className="space-y-6">
             <div className="flex items-start gap-4">
               <CheckCircle className="w-6 h-6 text-purple-400 shrink-0 mt-0.5" />
@@ -824,10 +822,10 @@ export default function App() {
 
 
       {/* 등록 정보 */}
-      <section id="register" className="py-24 px-6 relative overflow-hidden">
+      <section id="register" className="py-12 px-6 relative overflow-hidden">
         <div className="absolute inset-0 bg-blue-600/10 -z-10 blur-3xl scale-75"></div>
         <div className="max-w-3xl mx-auto glass-card p-10 md:p-16 border-2 border-blue-500/30">
-          <h3 className="text-3xl font-black mb-10 text-center">신청 안내</h3>
+          <h4 className="text-2xl font-bold mb-10 text-center">신청 안내</h4>
 
           <div className="space-y-8 mb-12">
             <div className="flex items-start gap-4">
@@ -874,6 +872,169 @@ export default function App() {
             <button onClick={() => window.location.href = 'tel:010-8995-3591'} className="w-full gradient-bg py-5 rounded-xl font-black text-xl hover:shadow-[0_0_20px_rgba(59,130,246,0.5)] transition-all cursor-pointer">
               지금 바로 사전 인터뷰 신청
             </button>
+          </div>
+        </div>
+      </section>
+
+      {/* 1일 워크숍 */}
+      <section id="workshop" className="pt-24 pb-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl font-bold mb-4">비즈니스멘탈 강화를 위한 1일 워크숍</h3>
+            <p className="text-gray-400 italic">"조직 단위의 멘탈관리 역량 제고를 위한 원데이 프로그램"</p>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-emerald-500">
+            <div className="space-y-8">
+              {/* 목적 & 대상 */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white/5 p-6 rounded-xl">
+                  <h4 className="text-emerald-400 font-bold mb-3 flex items-center gap-2"><Target className="w-4 h-4"/> 워크숍 목적</h4>
+                  <ul className="list-disc list-inside space-y-2 text-gray-300 text-sm">
+                    <li>비즈니스 현장에서 발생하는 멘탈이슈에 대한 구성원간 공감대 형성</li>
+                    <li>구성원 상호간 소통 및 실습으로 개인 및 조직의 멘탈관리 역량 제고</li>
+                  </ul>
+                </div>
+                <div className="bg-white/5 p-6 rounded-xl">
+                  <h4 className="text-emerald-400 font-bold mb-3 flex items-center gap-2"><Users className="w-4 h-4"/> 참여 대상</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    기업/단체의 최소 조직단위 구성원<br/>
+                    <span className="text-gray-400">(6~12명, 필요시 2~3개 조직 통합운영 가능)</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* 진행 개요 */}
+              <div>
+                <h4 className="text-emerald-400 font-bold mb-4 flex items-center gap-2"><Clock className="w-4 h-4"/> 워크샵 진행 개요</h4>
+                <div className="overflow-x-auto">
+                  <table className="w-full text-sm text-left text-gray-300">
+                    <thead className="text-xs text-gray-400 uppercase bg-white/5">
+                      <tr>
+                        <th className="px-4 py-3 rounded-tl-lg w-24">시간</th>
+                        <th className="px-4 py-3">주요 내용</th>
+                        <th className="px-4 py-3 rounded-tr-lg w-48">비고</th>
+                      </tr>
+                    </thead>
+                    <tbody className="divide-y divide-white/5">
+                      <tr className="bg-white/5 hover:bg-white/10 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">1 Hr</td>
+                        <td className="px-4 py-3">과정 소개 및 사전 진단결과 점검</td>
+                        <td className="px-4 py-3 text-gray-400">ws 전 개인별 진단</td>
+                      </tr>
+                      <tr className="bg-white/5 hover:bg-white/10 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">5 Hr</td>
+                        <td className="px-4 py-3">
+                          <p className="font-medium text-white mb-2">개인 및 조직 내에서의 멘탈강화 방법론 소개 및 실습</p>
+                          <ul className="space-y-1 text-gray-400 pl-2">
+                            <li>(1) 다시 일어나 도전한다 : 회복탄력성, GRIT</li>
+                            <li>(2) 나 답게 살아가는 힘을 발견한다 : 강점 강화</li>
+                            <li>(3) 나와 연결되는 소통의 힘을 인식한다 : NVC(비폭력대화)</li>
+                          </ul>
+                        </td>
+                        <td className="px-4 py-3 text-gray-400 align-top pt-4">개인/파트너/그룹 실습</td>
+                      </tr>
+                      <tr className="bg-white/5 hover:bg-white/10 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">1 Hr</td>
+                        <td className="px-4 py-3">개인별 실천계획 수립 및 다짐의 시간</td>
+                        <td className="px-4 py-3 text-gray-400">개인별 작성, 발표</td>
+                      </tr>
+                      <tr className="bg-white/5 hover:bg-white/10 transition-colors">
+                        <td className="px-4 py-3 font-medium text-white">1 Hr</td>
+                        <td className="px-4 py-3">소감 공유 및 마무리</td>
+                        <td className="px-4 py-3 text-gray-400"></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+
+              {/* 일정 및 비용 */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-white/10">
+                <div className="flex items-center gap-3 text-gray-300 bg-white/5 px-4 py-3 rounded-lg flex-1">
+                  <Calendar className="w-5 h-5 text-emerald-400" />
+                  <div>
+                    <span className="block text-xs text-gray-500">일정</span>
+                    <span className="font-medium">조직/단체에서 희망하는 일정 반영</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300 bg-white/5 px-4 py-3 rounded-lg flex-1">
+                  <Banknote className="w-5 h-5 text-emerald-400" />
+                  <div>
+                    <span className="block text-xs text-gray-500">비용</span>
+                    <span className="font-medium">80만원 내외 (사전 조율)</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* 특강 */}
+      <section id="special" className="pt-24 pb-12 px-6">
+        <div className="max-w-4xl mx-auto">
+          <div className="text-center mb-16">
+            <h3 className="text-3xl font-bold mb-4">비즈니스멘탈 강화 특강</h3>
+            <p className="text-gray-400 italic">"멘탈관리의 중요성 인식 및 실천 동기 부여를 위한 특강 프로그램"</p>
+          </div>
+          <div className="glass-card p-6 md:p-8 border-l-4 border-amber-500">
+            <div className="space-y-8">
+              {/* 목적 & 대상 */}
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="bg-white/5 p-6 rounded-xl">
+                  <h4 className="text-amber-400 font-bold mb-3 flex items-center gap-2"><Target className="w-4 h-4"/> 강의 목적</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    비즈니스멘탈 관리 방법론/사례 공유를 통해 멘탈관리의 중요성 인식 및 개인별 지속 실천을 위한 Motive 조성
+                  </p>
+                </div>
+                <div className="bg-white/5 p-6 rounded-xl">
+                  <h4 className="text-amber-400 font-bold mb-3 flex items-center gap-2"><Users className="w-4 h-4"/> 참여 대상</h4>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    기업/단체의 전 구성원<br/>
+                    <span className="text-gray-400 block mt-2">* 리더십 교육 (계층별, 승진자 교육과정 중) 또는 수시 특별교육 활용</span>
+                  </p>
+                </div>
+              </div>
+
+              {/* 주요 내용 */}
+              <div className="bg-white/5 p-6 rounded-xl">
+                <h4 className="text-amber-400 font-bold mb-4 flex items-center gap-2"><CheckCircle className="w-4 h-4"/> 주요 내용</h4>
+                <ul className="space-y-3 text-gray-300 text-sm">
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-400 mt-0.5">•</span>
+                    사람의 뇌구조/작동원리와 멘탈관리의 연관성
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-400 mt-0.5">•</span>
+                    명상을 통한 멘탈 강화 실습 (호흡명상, 자기확언명상, 내면소통명상)
+                  </li>
+                  <li className="flex items-start gap-2">
+                    <span className="text-amber-400 mt-0.5">•</span>
+                    개인별 회복탄력성 진단 및 진단결과 활용방안 소개
+                  </li>
+                </ul>
+              </div>
+
+              {/* 일정 및 비용 */}
+              <div className="flex flex-col sm:flex-row gap-4 pt-4 border-t border-white/10">
+                <div className="flex items-center gap-3 text-gray-300 bg-white/5 px-4 py-3 rounded-lg flex-1">
+                  <Calendar className="w-5 h-5 text-amber-400" />
+                  <div>
+                    <span className="block text-xs text-gray-500">일정</span>
+                    <span className="font-medium">조직/단체에서 희망하는 일정 반영</span>
+                  </div>
+                </div>
+                <div className="flex items-center gap-3 text-gray-300 bg-white/5 px-4 py-3 rounded-lg flex-1">
+                  <Banknote className="w-5 h-5 text-amber-400" />
+                  <div>
+                    <span className="block text-xs text-gray-500">비용</span>
+                    <span className="font-medium">기업/단체 운영기준 반영 (사전 조율)</span>
+                  </div>
+                </div>
+              </div>
+
+            </div>
           </div>
         </div>
       </section>
